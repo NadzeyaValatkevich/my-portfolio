@@ -1,0 +1,13 @@
+.contacts {
+    height: 100vh;
+    background-color: #fae3b0;
+}
+.contactsContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.title {
+    margin-top: 20px;
+    background-color: #f8f8da;
+}
