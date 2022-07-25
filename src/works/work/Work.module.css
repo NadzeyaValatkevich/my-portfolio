@@ -33,3 +33,10 @@
     width: 90%;
     min-height: 100px;
 }
+@media screen and (max-width: 600px) {
+    .btnWatchWork {
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
