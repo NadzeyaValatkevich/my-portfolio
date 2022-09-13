@@ -5,11 +5,12 @@
 .skillsContainer {
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 .title {
     margin-top: 20px;
     background-color: #f8f8da;
+    /*align-self: center;*/
 }
 .skills {
     border: 1px solid;
@@ -22,5 +23,8 @@
 @media screen and (max-width: 660px) {
     .skills {
         justify-content: center;
+    }
+    .skillsBlock {
+        height: 100%;
     }
 }
