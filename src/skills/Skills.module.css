@@ -1,5 +1,5 @@
 .skillsBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #c1f8c1;
 }
 .skillsContainer {
@@ -10,7 +10,6 @@
 .title {
     margin-top: 20px;
     background-color: #f8f8da;
-    /*align-self: center;*/
 }
 .skills {
     border: 1px solid;
@@ -23,8 +22,5 @@
 @media screen and (max-width: 660px) {
     .skills {
         justify-content: center;
-    }
-    .skillsBlock {
-        height: 100%;
     }
 }

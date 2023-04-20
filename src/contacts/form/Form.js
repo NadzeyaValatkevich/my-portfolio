@@ -14,7 +14,7 @@ export const Form = () => {
                 <div>
                     <textarea className={style.description}></textarea>
                 </div>
-                <button className={style.btnContacts}>Send</button>
+                <button type='submit' className={style.btnContacts}>Send</button>
             </form>
         </div>
     );

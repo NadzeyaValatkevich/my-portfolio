@@ -7,7 +7,9 @@ export const Work = (props) => {
             <div className={style.img}>
                 <button className={style.btnWatchWork}>Смотреть</button>
             </div>
-            <h3 className={style.title}>{props.title}</h3>
+            <div>
+                <h2 className={style.title}>{props.title}</h2>
+            </div>
             <textarea className={style.description}>{props.description}</textarea>
         </div>
     );
