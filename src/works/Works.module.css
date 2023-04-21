@@ -1,41 +1,12 @@
 .worksBlock {
     min-height: 100vh;
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 .worksContainer {
     /*align-items: center;*/
     flex-direction: column;
     /*justify-content: flex-start;*/
     background-color: #F6FBFF;
-}
-.title {
-    align-self: flex-start;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-    color: #333333;
-    text-transform: uppercase;
-    position: relative;
-    letter-spacing: 7px;
-    width: 100%;
-}
-
-.title h2 {
-    margin: 0;
-}
-
-.title::after {
-    content: '';
-    height: 1px;
-    /*width: 100%;*/
-    position: absolute;
-    /*display: block;*/
-    /*margin-left: 30px;*/
-    right: 0%;
-    left: 210px;
-    top: 50%;
-    transform: translate(0%, -50%);
-    background-color: rgb(125 119 137);
 }
 
 .works {
@@ -46,6 +17,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.title::after {
+    left: 270px;
+}
 @media screen and (max-width: 1150px) {
     .works {
         justify-content: center;
@@ -53,19 +27,14 @@
 }
 
 @media screen and (max-width: 960px) {
-    .title {
-        letter-spacing: 4px;
+    .title::after {
+        left: 240px
     }
+}
+
+@media screen and (max-width: 660px) {
     .title::after {
         left: 190px
     }
 }
 
-@media screen and (max-width: 660px) {
-    .title h2 {
-        font-size: 18px;
-    }
-    .title::after {
-        left: 150px
-    }
-}
