@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 1px solid #B9B8C3;
+  border: 1px solid $borderColor;
   margin-bottom: 10px;
 
   .img {
@@ -32,17 +32,22 @@
 
     .btnWatchProject {
       cursor: pointer;
-      font-family: Open Sans, sans-serif;
-      background-color: $bgColor;
+      font-family: $textFontFamily;
+      background-color: #FFFFFF;
+      color: $headersColor;
+      border: 2px solid $headersColor;
       padding: 10px 20px;
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
       z-index: 1;
+      transition-duration: 300ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover {
-        background-color: $textColor;
+        background-color: $headersColor;
+        color: #FFFFFF;
       }
 
       @media screen and (max-width: 600px) {

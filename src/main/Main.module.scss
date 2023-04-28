@@ -1,0 +1,64 @@
+@import '../common/styles/sass/variables';
+
+.mainBlock {
+  height: 90vh;
+}
+
+.text {
+  margin-left: 50px;
+  width: 300px;
+}
+
+.mainTitle {
+  font-size: 55px;
+  margin: 0 0 25px;
+  color: $headersColor;
+}
+
+.line {
+  display: inline-block;
+  margin: 0 0 25px;
+  height: 4px;
+  width: 60px;
+  background-color: $headersColor;
+}
+
+.titleDescription {
+  color: $textColor;
+  font-family: $headerFontFamily;
+  font-size: 23px;
+}
+
+.btnConnection {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.btnConnection a {
+  padding: 13px 32px;
+  display: inline-block;
+  border: 2px solid $headersColor;
+  background-color: $headersColor;
+  font-family: $headerFontFamily;
+  font-weight: 500;
+  color: #FFFFFF;
+  transition-duration: 300ms;
+  text-decoration: none;
+  cursor: pointer;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btnConnection a:hover {
+  background-color: #FFFFFF;
+  color: $headersColor;
+}
+
+.photo {
+  width: 40%;
+  height: 80%;
+  background-image: url("../assets/image/photo_2023-04-28_21-48-22.jpg ");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

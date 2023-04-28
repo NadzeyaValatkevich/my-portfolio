@@ -1,9 +1,8 @@
 .header {
-    height: 80px;
-    background-color: #d9d9f6;
+    height: 10vh;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
 }
 @media screen and (max-width: 800px) {
     .header {

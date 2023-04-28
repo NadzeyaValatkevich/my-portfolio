@@ -1,0 +1,20 @@
+@import '../common/styles/sass/variables';
+
+.nav {
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+.nav a {
+    color: $headersColor;
+    text-decoration: none;
+    font-family: $headerFontFamily;
+    font-size: 18px;
+    padding: 10px 22px;
+}
+.nav a:hover {
+    background-color: $headersColor;
+    color: #FFFFFF;
+}
