@@ -1,20 +1,89 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
-.nav {
+.navBlock {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  .nav {
     width: 500px;
     height: auto;
     display: flex;
     justify-content: space-between;
     margin-right: 100px;
-}
-.nav a {
-    color: $headersColor;
-    text-decoration: none;
-    font-family: $headerFontFamily;
-    font-size: 18px;
-    padding: 10px 22px;
-}
-.nav a:hover {
-    background-color: $headersColor;
-    color: #FFFFFF;
+    a {
+      @include text($headersColor, $headerFontFamily, 18px, null);
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 22px;
+      transition-duration: 300ms;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      &::before {
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: $headersColor;
+        position: absolute;
+        transition: all .6s ease .3s;
+        z-index: -1;
+      }
+      &:hover {
+        color: #FFFFFF;
+      }
+      &:hover::before {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
+  }
+  .hamburger {
+    display: none;
+    margin-right: 20px;
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: 0.15s;
+    transition-property: opacity, filter;
+    text-transform: none;
+    @media screen and (max-width: 1100px) {
+      display: inline-block;
+    }
+    .hamburgerBox {
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 24px;
+      .hamburgerInner, .hamburgerInner:before, .hamburgerInner:after {
+        width: 30px;
+        display: block;
+        position: absolute;
+        border-radius: 4px;
+        background-color: #000;
+        transition-timing-function: ease;
+        transition-duration: 0.15s;
+        transition-property: transform;
+      }
+      .hamburgerInner {
+        top: 2px;
+        height: 3px;
+        &::before {
+          content: '';
+          height: 2px;
+          top: 10px;
+        }
+        &::after {
+          content: '';
+          height: 2px;
+          top: 20px;
+        }
+      }
+    }
+  }
 }
