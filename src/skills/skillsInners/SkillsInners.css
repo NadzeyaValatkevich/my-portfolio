@@ -1,0 +1,12 @@
+.skillsInners {
+    width: 100%;
+    display: flex;
+}
+.nameSkillBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.nameSkill {
+    align-self: center;
+}
