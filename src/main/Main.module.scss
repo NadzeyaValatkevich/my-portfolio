@@ -1,90 +1,81 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .mainBlock {
   height: 90vh;
-}
 
-.text {
-  margin-left: 50px;
-  width: 300px;
-}
-
-.mainTitle {
-  font-size: 60px;
-  margin: 0 0 25px;
-  color: $headersColor;
-}
-
-.line {
-  display: inline-block;
-  margin: 0 0 25px;
-  height: 4px;
-  width: 60px;
-  background-color: $headersColor;
-}
-
-.titleDescription {
-  color: $textColor;
-  font-family: $headerFontFamily;
-  font-size: 22px;
-}
-
-.btnConnection {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-
-.btnConnection a {
-  padding: 13px 32px;
-  display: inline-block;
-  border: 2px solid $headersColor;
-  background-color: $headersColor;
-  font-family: $headerFontFamily;
-  font-weight: 500;
-  color: #FFFFFF;
-  transition-duration: 300ms;
-  transition-property: all;
-  text-decoration: none;
-  cursor: pointer;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btnConnection a:hover {
-  background-color: #FFFFFF;
-  color: $headersColor;
-}
-
-.photo {
-  width: 35%;
-  height: 80%;
-  background-image: url("../assets/image/photo_2023-04-28_21-48-22.jpg ");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 1100px) {
   .photo {
-    display: none;
+    width: 35%;
+    height: 80%;
+    @include image(url("../assets/image/photo_2023-04-28_21-48-22.jpg "), cover, center, no-repeat);
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
   }
+
   .text {
-    margin-left: 0px;
+    margin-left: 50px;
+    width: 300px;
+    @media screen and (max-width: 1100px) {
+      margin-left: 0px;
+    }
+
+    .mainTitle {
+      font-size: 60px;
+      margin: 0 0 25px;
+      color: $headersColor;
+      @media screen and (max-width: 770px) {
+        font-size: 40px;
+      }
+    }
+
+    .line {
+      display: inline-block;
+      margin: 0 0 25px;
+      height: 4px;
+      width: 60px;
+      background-color: $headersColor;
+      @media screen and (max-width: 770px) {
+        height: 3px;
+        width: 40px;
+      }
+    }
+
+    .titleDescription {
+      color: $textColor;
+      font-family: $headerFontFamily;
+      font-size: 22px;
+      @media screen and (max-width: 770px) {
+        font-size: 20px;
+      }
+    }
+
+    .btnConnection {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+
+      a {
+        padding: 13px 32px;
+        display: inline-block;
+        border: 2px solid $headersColor;
+        background-color: $headersColor;
+        transition-duration: 300ms;
+        transition-property: all;
+        text-decoration: none;
+        cursor: pointer;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include text(#FFFFFF, $headerFontFamily, null, 500);
+        @media screen and (max-width: 770px) {
+          padding: 10px 28px;
+        }
+
+        &:hover {
+          background-color: #FFFFFF;
+          color: $headersColor;
+        }
+      }
+    }
   }
 }
 
-@media screen and (max-width: 770px) {
-  .mainTitle {
-    font-size: 40px;
-  }
-  .line {
-    height: 3px;
-    width: 40px;
-  }
-  .titleDescription {
-    font-size: 20px;
-  }
-  .btnConnection a {
-    padding: 10px 28px;
-  }
-}

@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Contacts.module.css'
 import {Form} from "./form/Form";
-import styleContainer from "../common/styles/Container.module.css";
+import styleContainer from "../common/styles/Container.module.scss";
 import {Title} from "../common/components/title/Title";
 
 export const Contacts = () => {

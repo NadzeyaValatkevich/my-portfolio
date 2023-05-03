@@ -4,15 +4,12 @@
 .navBlock {
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  @include alignmentFlex(flex, flex-end, flex-end);
   .nav {
     width: 500px;
     height: auto;
-    display: flex;
-    justify-content: space-between;
     margin-right: 100px;
+    @include alignmentFlex(flex, space-between, null);
     a {
       @include text($headersColor, $headerFontFamily, 18px, null);
       display: inline-block;

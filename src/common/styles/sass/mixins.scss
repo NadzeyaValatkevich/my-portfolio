@@ -3,4 +3,17 @@
   font-family: $fontFamily;
   font-size: $fontSize;
   font-weight: $fontweight;
+};
+
+@mixin alignmentFlex ($display, $justifyContent, $alignItems) {
+  display: $display;
+  justify-content: $justifyContent;
+  align-items: $alignItems
+};
+
+@mixin image ($url, $bgSize, $bgPosition, $bgRepeat) {
+  background-image: $url;
+  background-size: $bgSize;
+  background-position: $bgPosition;
+  background-repeat: $bgRepeat;
 }
