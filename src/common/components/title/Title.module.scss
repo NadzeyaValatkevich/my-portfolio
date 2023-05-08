@@ -19,12 +19,13 @@
     height: 1px;
     position: absolute;
     right: 0%;
+    //left: 0%;
     top: 50%;
     transform: translate(0%, -50%);
     background-color: $textColor;
   }
 
-  .title h2 {
+  h2 {
     margin: 0;
     @media screen and (max-width: 660px) {
       font-size: 18px;

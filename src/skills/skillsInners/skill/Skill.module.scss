@@ -1,6 +1,52 @@
 @import '../../../common/styles/sass/variables';
+
 .skill {
   width: 300px;
-  height: 50px;
+  height: 60px;
   margin: 29px 0;
+  display: flex;
+}
+
+.skillIcon {
+  background-color: $borderColor;
+  border-radius: 9999px;
+  min-width: 60px;
+  height: 60px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillIcon svg {
+  width: 40px;
+  height: 40px;
+}
+.skillBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.skillTitle h3 {
+  color: $headersColor;
+  font-family: $headerFontFamily;
+  font-size: 24px;
+}
+
+.skillBlock::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 90px;
+  background-color: $borderColor;
+  top: -15px;
+  left: -23px;
+  transform: rotate(8deg);
+}
+
+@media screen and (max-width: 960px) {
+  .skillTitle h3 {
+    font-size: 20px;
+  }
 }

@@ -1,26 +1,8 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#231F20;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#231F20;stroke-width:5.9606;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st2{fill:#231F20;}
-</style>
-<path class="st0" d="M408.09,462H103.91C74.14,462,50,437.86,50,408.09V103.91C50,74.14,74.14,50,103.91,50h304.17
-	C437.86,50,462,74.14,462,103.91v304.17C462,437.86,437.86,462,408.09,462z" id="id_101" style="stroke: rgb(51, 51, 51);"></path>
-<g>
-<rect x="338.79" y="233.18" class="st0" width="45.78" height="45.78" id="id_102" style="stroke: rgb(51, 51, 51);"></rect>
-<path class="st0" d="M319.84,349.71c23.66-16.21,40.59-41.43,45.9-70.75" id="id_103" style="stroke: rgb(51, 51, 51);"></path>
-<path class="st0" d="M326.63,174.22c18.36,14.72,31.83,35.35,37.67,58.95" id="id_104" style="stroke: rgb(51, 51, 51);"></path>
-<path class="st0" d="M173.21,256.06c0,6.32-2.56,12.04-6.74,16.21c-4.11,4.11-9.78,6.68-16.09,6.68h-0.06
-		c-12.64,0-22.89-10.25-22.89-22.89c0-6.32,2.56-12.04,6.74-16.21c4.11-4.11,9.83-6.68,16.15-6.68c0.48,0,0.95,0,1.43,0.06
-		c5.78,0.36,10.91,2.8,14.72,6.62C170.64,244.02,173.21,249.75,173.21,256.06z" id="id_105" style="stroke: rgb(51, 51, 51);"></path>
-<path class="st0" d="M151.75,233.24c11.74-47.8,54.84-83.27,106.28-83.27c10.31,0,20.27,1.43,29.68,4.11" id="id_106" style="stroke: rgb(51, 51, 51);"></path>
-<path class="st1" d="M151.21,283.36c-0.3-1.43-0.6-2.92-0.83-4.41" id="id_107" style="stroke: rgb(51, 51, 51);"></path>
-<path class="st0" d="M278.11,366.99c-1.25,0.24-2.56,0.42-3.81,0.6" id="id_108" style="stroke: rgb(51, 51, 51);"></path>
-<path class="st0" d="M169.69,323.9c16.81,23.07,42.5,39.34,72.06,43.69" id="id_109" style="stroke: rgb(51, 51, 51);"></path>
-<polygon class="st0" points="285.92,387.79 230.13,387.79 241.75,367.59 244.08,363.59 258.03,339.45 271.97,363.59 274.3,367.59 	
-		" id="id_110" style="stroke: rgb(51, 51, 51);"></polygon>
-<polygon class="st2" points="314.83,321.33 352.38,358.89 308.39,358.89 	" id="id_111" style="fill: rgb(51, 51, 51);"></polygon>
-<polygon class="st2" points="195.34,315.42 157.29,352.47 157.88,308.48 	" id="id_112" style="fill: rgb(51, 51, 51);"></polygon>
-<polygon class="st2" points="273.28,176.79 280.7,124.21 307.16,159.35 	" id="id_113" style="fill: rgb(51, 51, 51);"></polygon>
-</g>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" fill="white" fill-opacity="0.01"/>
+<path d="M18 31H38V5" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30 21H10V43" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44 11L38 5L32 11" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 37L10 43L4 37" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
