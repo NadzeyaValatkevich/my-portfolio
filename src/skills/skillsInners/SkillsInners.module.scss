@@ -2,35 +2,31 @@
 @import "../../common/styles/sass/mixins";
 
 .skillsInners {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /*align-items: center;*/
-    /*justify-content: center;*/
-}
-.nameSkillBlock {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-.nameSkill {
-    @include text($headersColor, $headerFontFamily, 24px, 500);
-    line-height: 1.2;
-}
-.skillsText {
+  .nameSkillBlock {
+    @include alignmentFlex(flex, center, null);
+    margin-bottom: 15px;
+
+    .nameSkill {
+      @include text($headersColor, $headerFontFamily, 24px, 500);
+      line-height: 1.2;
+      @media screen and (max-width: 660px) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .skillsText {
     width: 50%;
     margin-bottom: 15px;
-}
-.skillsInnersBlock {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+  }
 
-@media screen and (max-width: 660px) {
-    .nameSkillBlock h3 {
-        font-size: 22px;
-    }
+  .skillsInnersBlock {
+    width: 100%;
+    @include alignmentFlex(flex, space-between, null);
+    flex-wrap: wrap;
+  }
 }
