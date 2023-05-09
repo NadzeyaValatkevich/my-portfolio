@@ -1,8 +1,8 @@
-@mixin text ($lettersColor, $fontFamily, $fontSize, $fontweight) {
+@mixin text ($lettersColor, $fontFamily, $fontSize, $fontWeight) {
   color: $lettersColor;
   font-family: $fontFamily;
   font-size: $fontSize;
-  font-weight: $fontweight;
+  font-weight: $fontWeight;
 };
 
 @mixin alignmentFlex ($display, $justifyContent, $alignItems) {

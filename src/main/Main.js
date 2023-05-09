@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Main.module.scss';
 import styleContainer from '../common/styles/Container.module.scss'
+import {Button} from "../common/components/button/Button";
 
 export const Main = () => {
     return (
@@ -11,9 +12,7 @@ export const Main = () => {
                     <h1 className={style.mainTitle}>NADZEYA VALATKEVICH</h1>
                     <span className={style.line}></span>
                     <p className={style.titleDescription}>Frontend Developer</p>
-                    <div className={style.btnConnection}>
-                        <a href={'#'}>Get in Touch</a>
-                    </div>
+                    <Button title={'Get in Touch'} className={style.btnConnection}/>
                 </div>
             </div>
         </div>

@@ -1,25 +1,15 @@
 @import '../styles/sass/variables';
 @import '../styles/sass/mixins';
+
 .container {
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    background-color: $bgColor;
-    @include alignmentFlex(flex, flex-start, center);
-    @media screen and (max-width: 1100px) {
-        width: 100%;
-        padding: 0 20px;
-    }
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background-color: $bgColor;
+  @include alignmentFlex(flex, flex-start, center);
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
-//@media screen and (max-width: 1100px) {
-//    .container {
-//        width: 100%;
-//        padding: 0 20px;
-//    }
-//}
-/*@media screen and (max-width: 800px) {*/
-/*    .container {*/
-/*        justify-content: center;*/
-/*    }*/
-/*}*/
