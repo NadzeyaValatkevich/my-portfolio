@@ -1,0 +1,17 @@
+.footer {
+    height: 10vh;
+    .footerContainer {
+        .iconBlock {
+            width: 180px;
+            height: 40px;
+            padding: 5px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 660px) {
+                width: 150px;
+                height: 30px;
+            }
+        }
+    }
+}
