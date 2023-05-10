@@ -2,55 +2,43 @@
 @import '../../common/styles/sass/mixins';
 .formBlock {
     width: 100%;
-    /*height: 50%;*/
     margin: auto;
-    display: flex;
-    justify-content: center;
-}
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    /*justify-content: space-between;*/
-}
-.formInput {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 30px;
-    background-color: $bgColor;
-    border: 1px solid $borderColor;
-}
-.input {
-    @include text(null, $headerFontFamily, 13px, null);
-    letter-spacing: 1.4px;
-    line-height: 1.6;
-    background-color: $bgColor;
-    border: none;
-    width: 100%;
-    padding: 5px;
-    transition: all .3s ease;
-}
-.message {
-    @include text(null, $headerFontFamily, 13px, null);
-    border: 1px solid $borderColor;
-    letter-spacing: 1.4px;
-    width: 100%;
-    height: 120px;
-    background-color: $bgColor;
-    margin-bottom: 20px;
-    resize: none;
-    padding: 10px;
-}
-.btnContacts {
-    width: 150px;
-    height: 30px;
-    border-radius: 5px;
-    align-self: center;
-}
-@media screen and (max-width: 600px) {
-    .btnContacts {
-        width: 100px;
-        height: 30px;
-        font-size: 16px;
+    @include alignmentFlex (flex, center, null);
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .formInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px;
+            background-color: $bgColor;
+            border: 1px solid $borderColor;
+            .input {
+                @include text(null, $headerFontFamily, 13px, null);
+                letter-spacing: 1.4px;
+                line-height: 1.6;
+                background-color: $bgColor;
+                border: none;
+                width: 100%;
+                padding: 5px;
+                transition: all .3s ease;
+                outline: none;
+            }
+        }
+        div {
+            .message {
+                @include text(null, $headerFontFamily, 13px, null);
+                border: 1px solid $borderColor;
+                letter-spacing: 1.4px;
+                width: 100%;
+                height: 120px;
+                outline: none;
+                background-color: $bgColor;
+                margin-bottom: 20px;
+                resize: none;
+                padding: 10px;
+            }
+        }
     }
 }
