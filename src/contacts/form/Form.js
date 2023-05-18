@@ -15,7 +15,8 @@ export const Form = () => {
                 <div>
                     <textarea className={style.message} id={'message'} placeholder={'Message'}></textarea>
                 </div>
-                <Button title={'Send Message'}/>
+                <button type={'submit'}>Send Message</button>
+                {/*<Button title={'Send Message'}/>*/}
             </form>
         </div>
     );

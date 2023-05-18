@@ -4,9 +4,7 @@
 .project {
   width: 500px;
   height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, null, center, null);
   text-align: center;
   border: 1px solid $borderColor;
   margin-bottom: 10px;
@@ -15,9 +13,7 @@
     width: 100%;
     height: 60%;
     position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include image(null, cover, center, no-repeat);
 
     &::before {
       content: "";
@@ -32,9 +28,7 @@
 
     .btnWatchProject {
       cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @include flex(column, center, null, null);
       font-family: $textFontFamily;
       background-color: #FFFFFF;
       color: $headersColor;
@@ -75,5 +69,3 @@
     }
   }
 }
-
-

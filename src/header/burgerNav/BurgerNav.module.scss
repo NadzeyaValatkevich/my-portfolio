@@ -1,0 +1,41 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.burgerNavBlock {
+  width: 150px;
+  //position: fixed;
+  //right: 0;
+  display: none;
+  padding-top: 120px;
+  .burgerNav {
+    width: 100%;
+    //height: auto;
+    @include flex(column, flex-start, flex-end, null);
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    //margin-right: 100px;
+    @include flex(null, space-between, null, null);
+    .burgerPhoto {
+      width: 80px;
+      height: 80px;
+      @include image(url("../../assets/image/my-photo.jpg"), cover, center, no-repeat);
+    }
+    a {
+      @include text($headersColor, $headerFontFamily, 18px, null);
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 0 10px 22px;
+      transition-duration: 300ms;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.show {
+  display: block;
+}

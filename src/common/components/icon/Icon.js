@@ -1,9 +1,9 @@
 import style from './Icon.module.scss';
-export const Icon = ({svg}) => {
+export const Icon = ({src, alt}) => {
     return (
         <div className={style.icon}>
             <a className={style.iconLink} href={'#'}>
-                {svg}
+                <img src={src} alt={alt}/>
             </a>
         </div>
     )

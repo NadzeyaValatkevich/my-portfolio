@@ -8,7 +8,7 @@
   display: flex;
 
   .skillIcon {
-    @include alignmentFlex(flex, center, center);
+    @include flex(null, center, center, null);
     background-color: $borderColor;
     border-radius: 9999px;
     min-width: 60px;
@@ -30,7 +30,7 @@
   }
 
   .skillBlock {
-    @include alignmentFlex(flex, center, center);
+    @include flex(null, center, center, null);
     position: relative;
 
     &::before {

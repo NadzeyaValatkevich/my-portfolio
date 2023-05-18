@@ -22,7 +22,7 @@ export const Projects = () => {
     }
 
     return (
-        <div className={style.projectsBlock}>
+        <div id='projects' className={style.projectsBlock}>
             <div className= {`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title text={'My projects'} className={style.title}/>
                 <div className={style.projects}>

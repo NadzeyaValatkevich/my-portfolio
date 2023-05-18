@@ -1,11 +1,11 @@
 import React from 'react';
-import style from './Header.module.scss'
-import {Nav} from "../nav/Nav";
+import style from './Header.module.scss';
+import {Nav} from "./nav/Nav";
 
-export const Header = () => {
+export const Header = ({menuIsOpen, setMenuIsOpen}) => {
     return (
         <div className={style.header}>
-            <Nav/>
+            <Nav nemuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen}/>
         </div>
     );
 };

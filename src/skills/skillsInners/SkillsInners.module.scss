@@ -3,11 +3,10 @@
 
 .skillsInners {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  @include flex(column, null, null, null);
 
   .nameSkillBlock {
-    @include alignmentFlex(flex, center, null);
+    @include flex(null, center, null, null);
     margin-bottom: 15px;
 
     .nameSkill {
@@ -26,7 +25,6 @@
 
   .skillsInnersBlock {
     width: 100%;
-    @include alignmentFlex(flex, space-between, null);
-    flex-wrap: wrap;
+    @include flex(null, space-between, null, wrap);
   }
 }

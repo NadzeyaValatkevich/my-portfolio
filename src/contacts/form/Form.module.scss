@@ -1,12 +1,12 @@
 @import '../../common/styles/sass/variables';
 @import '../../common/styles/sass/mixins';
+@import '../../common/components/button/Button.module';
 .formBlock {
     width: 100%;
     margin: auto;
-    @include alignmentFlex (flex, center, null);
+    @include flex (null, center, null, null);
     .form {
-        display: flex;
-        flex-direction: column;
+        @include flex (column, null, null, null);
         width: 100%;
         .formInput {
             width: 100%;
@@ -38,6 +38,18 @@
                 margin-bottom: 20px;
                 resize: none;
                 padding: 10px;
+            }
+        }
+        button[type='submit'] {
+            @extend .btn;
+            width: 180px;
+            height: 60px;
+            font-size: 18px;
+            padding: 5px;
+            @media screen and (max-width: 770px) {
+                width: 154px;
+                height: 49px;
+                font-size: 15px;
             }
         }
     }

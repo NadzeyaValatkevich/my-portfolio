@@ -3,7 +3,6 @@ export const SvgGenerator = ({id}) => {
         case 'html':
             return <svg width="256px" height="361px" viewBox="0 0 256 361" version="1.1"
                         xmlns="http://www.w3.org/2000/svg"
-                // xmlns:xlink="http://www.w3.org/1999/xlink"
                         preserveAspectRatio="xMidYMid">
                 <g>
                     <path
@@ -121,7 +120,6 @@ export const SvgGenerator = ({id}) => {
         case 'redux':
             return <svg width="256px" height="244px" viewBox="0 0 256 244" version="1.1"
                         xmlns="http://www.w3.org/2000/svg"
-                // xmlns:xlink="http://www.w3.org/1999/xlink"
                         preserveAspectRatio="xMidYMid">
                 <g>
                     <path
@@ -131,7 +129,6 @@ export const SvgGenerator = ({id}) => {
             </svg>
         case 'git':
             return <svg viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                // xmlns:xlink="http://www.w3.org/1999/xlink"
                         preserveAspectRatio="xMidYMid">
                 <g>
                     <path
@@ -153,9 +150,7 @@ export const SvgGenerator = ({id}) => {
             </svg>
         case 'communication':
             return <svg fill="#333333" width="800px" height="800px" viewBox="0 0 128 128" id="Layer_1" version="1.1"
-                // xml:space="preserve"
                         xmlns="http://www.w3.org/2000/svg"
-                // xmlns:xlink="http://www.w3.org/1999/xlink"
             >
 
                 <g>
@@ -168,9 +163,7 @@ export const SvgGenerator = ({id}) => {
             </svg>
         case 'teamWork':
             return <svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                // xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 512 512"
-                // xml:space="preserve"
             >
                 <circle style={{fill: "#333333"}} cx="256" cy="33.24" r="33.24"/>
                 <g>
@@ -179,7 +172,7 @@ export const SvgGenerator = ({id}) => {
                     <path style={{fill: "#333333"}}
                           d="M257.48,145.928l31.76-69.432c0,0,33.24,0.736,33.24,31.024v38.4L257.48,145.928z"/>
                 </g>
-                <polygon style={{fill: "#E21B1B"}} points="232.768,76.488 256,128.2 279.232,76.488 "/>
+                <polygon style={{fill: "#333333"}} points="232.768,76.488 256,128.2 279.232,76.488 "/>
                 <circle style={{fill: "#333333"}} cx="445.52" cy="216.24" r="33.24"/>
                 <g>
                     <path style={{fill: "#333333"}}
@@ -187,7 +180,7 @@ export const SvgGenerator = ({id}) => {
                     <path style={{fill: "#333333"}}
                           d="M447,328.96l31.76-69.432c0,0,33.24,0.736,33.24,31.024v38.4L447,328.96z"/>
                 </g>
-                <polygon style={{fill: "#E21B1B"}} points="422.288,259.528 445.52,311.232 468.752,259.528 "/>
+                <polygon style={{fill: "#333333"}} points="422.288,259.528 445.52,311.232 468.752,259.528 "/>
                 <circle style={{fill: "#333333"}} cx="66.48" cy="216.24" r="33.24"/>
                 <g>
                     <path style={{fill: "#333333"}}
@@ -195,7 +188,7 @@ export const SvgGenerator = ({id}) => {
                     <path style={{fill: "#333333"}}
                           d="M67.96,328.96l31.76-69.432c0,0,33.24,0.736,33.24,31.024v38.4L67.96,328.96z"/>
                 </g>
-                <polygon style={{fill: "#E21B1B"}} points="43.248,259.528 66.48,311.232 89.712,259.528 "/>
+                <polygon style={{fill: "#333333"}} points="43.248,259.528 66.48,311.232 89.712,259.528 "/>
                 <circle style={{fill: "#333333"}} cx="256" cy="399.312" r="33.24"/>
                 <g>
                     <path style={{fill: "#333333"}}
@@ -203,7 +196,7 @@ export const SvgGenerator = ({id}) => {
                     <path style={{fill: "#333333"}}
                           d="M257.48,512l31.76-69.432c0,0,33.24,0.736,33.24,31.024v38.4L257.48,512z"/>
                 </g>
-                <polygon style={{fill: "#E21B1B"}} points="232.768,442.56 256,494.272 279.232,442.56 "/>
+                <polygon style={{fill: "#333333"}} points="232.768,442.56 256,494.272 279.232,442.56 "/>
             </svg>
         case 'adaptability':
             return <svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
